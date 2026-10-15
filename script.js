@@ -1,6 +1,7 @@
 const fruitForm = document.querySelector('#inputSection form')
 const fruitList = document.querySelector('#fruitSection ul')
 const fruitNutrition = document.querySelector('#nutritionSection p');
+const fruitImg = document.querySelector('#imageFruit img');
 fruitForm.addEventListener('submit', extractFruit)
 // console.log(fruitForm);
 
