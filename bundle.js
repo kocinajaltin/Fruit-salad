@@ -6,13 +6,22 @@ fruitForm.addEventListener('submit', extractFruit)
 
 function extractFruit(e){
     e.preventDefault()
-    console.log(e.target.fruitInput.value);
+    addFruit(e.target.fruitInput.value);
     e.target.fruitInput.value = ""
 }
 
 function addFruit(fruit) {
     const li = document.createElement('li')
-    li.textContent = fruit
-    fruitList.appendChild(li)
+    if (/^[a-zA-Z]+$/.test(fruit)) {
+        li.textContent = fruit
+        li.addEventListener('click', removeClickFruit)
+        fruitList.appendChild(li)
+
+    }
+    
 }
+
+function removeClickFruit(e) {
+    e.target.remove()
+} 
 },{}]},{},[1]);
