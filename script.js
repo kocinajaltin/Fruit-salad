@@ -1,3 +1,9 @@
-const fruitForm = document.querySelector('#inputSection')
+const fruitForm = document.querySelector('#inputSection form')
 
-console.log(fruitForm);
+fruitForm.addEventListener('submit', extractFruit)
+// console.log(fruitForm);
+
+function extractFruit(e){
+    e.preventDefault()
+    console.log(e);
+}
