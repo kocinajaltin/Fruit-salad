@@ -1,3 +1,3 @@
-const x = require("./script2")
+const fruitForm = document.querySelector('#inputSection')
 
-console.log(x);
+console.log(fruitForm);
