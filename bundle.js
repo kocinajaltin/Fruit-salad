@@ -96,8 +96,10 @@ async function getImage(fruit) {
 
 
 function extractFruitImg (data) {
-    console.log(data.hits[0].previewURL)
+    newimgurl = (data.hits[0].previewURL)
+    fruitImg.src = (newimgurl)
 }
+
 
 
 
